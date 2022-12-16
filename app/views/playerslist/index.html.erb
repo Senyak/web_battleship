@@ -1,0 +1,54 @@
+<nav>
+  <%= link_to 'Покинуть борт', logout_path %>
+
+</nav>
+
+<h1> Добро пожаловать на борт, капитан <%= @current_user.username %>! </h1>
+
+<h1> Капитаны, которым Вы можете бросить вызов </h1>
+<table>
+  <colgroup>
+    <col span="1" style="background:Khaki">
+    <col span="2" style="background-color:LightCyan">
+  </colgroup>
+  <thead>
+  <tr>
+    <th>Капитан</th>
+    <th>Победы</th>
+    <th>Поражения</th>
+    <th> </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Капитан1</td><td>5</td><td>0</td><td><%= link_to 'Бросить вызов', playerslist_path %></td>
+  </tr>
+  <tr>
+    <td>Капитан2</td><td>4</td><td>1</td><td><%= link_to 'Бросить вызов', playerslist_path %></td>
+  </tr>
+  </tbody>
+</table>
+
+<h1> Капитаны, которые бросили Вам вызов </h1>
+<table>
+  <colgroup>
+    <col span="1" style="background:Khaki">
+    <col span="2" style="background-color:LightCyan">
+  </colgroup>
+  <thead>
+  <tr>
+    <th>Капитан </th>
+    <th>Победы </th>
+    <th>Поражения </th>
+    <th> </th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td> Капитан3 </td><td> 3 </td><td> 2 </td><td><%= link_to 'Принять вызов', playerslist_path %></td>
+  </tr>
+  <tr>
+    <td>Капитан4</td><td>1</td><td>5</td><td><%= link_to 'Принять вызов', playerslist_path %></td>
+  </tr>
+  </tbody>
+</table>

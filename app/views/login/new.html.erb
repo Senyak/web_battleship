@@ -1,0 +1,19 @@
+<%= render 'shared/errors' %>
+
+
+<%= form_for :user, class: 'register_form' do |f| %>
+  <div class = "input_item">
+    <%= label_tag :email, 'Почта' %>
+    <%= f.email_field :email %>
+  </div>
+
+  <div class = "input_item">
+    <%= label_tag :password, 'Пароль' %>
+    <%= f.password_field :password %>
+  </div>
+
+  <div class = "input_item">
+    <%= f.submit 'Войти' %>
+  </div>
+
+<% end %>
