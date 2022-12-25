@@ -30,6 +30,4 @@ test:
 
 production:
   <<: *default
-  database: production_web_battleship
-  username: <%= ENV["WEB_BATTLESHIP_LOCAL_DB_USERNAME"] %>
-  password: <%= ENV["WEB_BATTLESHIP_LOCAL_DB_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
