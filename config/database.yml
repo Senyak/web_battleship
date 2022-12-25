@@ -5,13 +5,17 @@
 #   gem "sqlite3"
 #
 default: &default
-  adapter: sqlite3
+  adapter: postgresql
+  encoding: unicode
+  lc_collate: 'en_US.utf8'
+  lc_type: 'en_US.utf8'
+  host: 'dpg-cek21u9a6gdkdn6vdvlg-a.frankfurt-postgres.render.com'
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
 
 development:
   <<: *default
-  database: db/development.sqlite3
+  database: development_web_battleship
   username: <%= ENV["WEB_BATTLESHIP_LOCAL_DB_USERNAME"] %>
   password: <%= ENV["WEB_BATTLESHIP_LOCAL_DB_PASSWORD"] %>
 
@@ -20,12 +24,12 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: db/test.sqlite3
+  database: test_web_battleship
   username: <%= ENV["WEB_BATTLESHIP_LOCAL_DB_USERNAME"] %>
   password: <%= ENV["WEB_BATTLESHIP_LOCAL_DB_PASSWORD"] %>
 
 production:
   <<: *default
-  database: db/production.sqlite3
-  username: webb
-  password: <%= ENV["WEB_BATTLESHIP_DATABASE_PASSWORD"] %>
+  database: production_web_battleship
+  username: <%= ENV["WEB_BATTLESHIP_LOCAL_DB_USERNAME"] %>
+  password: <%= ENV["WEB_BATTLESHIP_LOCAL_DB_PASSWORD"] %>
