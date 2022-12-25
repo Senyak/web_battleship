@@ -234,6 +234,7 @@ DEPENDENCIES
   dotenv-rails
   importmap-rails
   jbuilder
+  matrix (~> 0.4.2)
   pg (~> 1.1)
   puma (~> 5.0)
   rails (~> 7.0.4)
