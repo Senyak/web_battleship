@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   get '/playerslist', to: 'playerslist#index'
 
+  get '/auth/:provider/callback' => 'login#omniauth'
+
 
 
 end

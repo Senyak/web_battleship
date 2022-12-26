@@ -53,7 +53,6 @@ gem "battleship" , git: "https://github.com/Senyak/battleship_ruby"
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
-  gem "dotenv-rails"
 end
 
 group :development do
@@ -77,3 +76,8 @@ end
 
 
 gem "matrix", "~> 0.4.2"
+
+gem 'omniauth'
+gem 'dotenv-rails'
+gem 'omniauth-google-oauth2'
+gem 'omniauth-rails_csrf_protection', '~> 1.0'
