@@ -17,6 +17,11 @@ body{
     font-size: 3vmax;
 }
 
+.title-sml{
+    font-size: 1vmax;
+    text-align: center;
+}
+
 .main-txt{
     color:white;
     text-align: center;

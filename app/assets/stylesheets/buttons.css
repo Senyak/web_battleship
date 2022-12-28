@@ -29,3 +29,27 @@ a.button:active {
 a.l_button{
     font-weight: bolder;
 }
+
+a.sec_button{
+    position: relative;
+    display: inline-block;
+    color:  #0062E0;
+    font-weight: normal;
+    font-size: 4vmin;
+    text-decoration: none;
+    text-shadow: rgba(255,255,255,25%) 1px 1px, rgba(100,100,100,10%) 3px 7px 3px;
+    user-select: none;
+    padding: 1em 2em;
+    outline: none;
+    border-radius: 3px / 100%;
+    background-color: rgba(255,255,255,50%);
+    background-image:
+            linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%);
+    background-repeat: no-repeat;
+    background-size: 300% 200%, auto, 100% 2px, 100% 2px, 100% 1px, 100% 1px;
+    background-position: 300% 0, 0 0, 0 0, 0 200%, 0 4px, 0 calc(100% - 4px);
+    box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+}
+a.sec_button:hover {
+    background-color: rgba(128,128,128,50%) ;
+}

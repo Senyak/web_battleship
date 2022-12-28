@@ -1,10 +1,14 @@
 
 .block {
     padding: 20px;
+    background-color: rgba(255,255,255,50%);
+    background-image:
+            linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%);
+    box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
 }
 .field {
     width: 260px;
-    margin: 24px;
+    margin: 1vmax 18vmax;
     border: 1px solid #bbdefb;
 }
 .field::before, .field::after {
@@ -33,4 +37,50 @@
 }
 .field .missed {
     background-color:  #bbdefb;
+}
+
+.tbody{
+    padding: 64px;
+    height: 100%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+
+}
+
+.body_back{
+    background-color: rgba(255,255,255,50%);
+    background-image:
+            linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%);
+    box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+    margin-left: 50em;
+    margin-right: 50em;
+    padding-top: 1em;
+}
+
+.play_grid
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr ;
+    grid-gap: 5px;
+    justify-content: center;
+    grid-template-areas:
+        "one"
+        "two";
+}
+.play_1{
+    grid-area: one;
+}
+
+.play_2{
+    grid-area: two;
+}
+h2.st{
+    background-color: rgba(255,255,255,50%);
+    background-image:
+            linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%);
+    box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+    margin-left: 41.5em;
+    margin-right: 41.5em;
 }
