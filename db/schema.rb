@@ -31,12 +31,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_28_143425) do
   create_table "information", force: :cascade do |t|
     t.integer "wins"
     t.integer "losses"
+    t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "ratings", force: :cascade do |t|
     t.integer "rating"
+    t.integer "information_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
