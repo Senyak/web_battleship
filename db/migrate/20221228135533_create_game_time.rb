@@ -1,6 +1,9 @@
 class CreateGameTime < ActiveRecord::Migration[7.0]
   def change
     create_table :game_times do |t|
+      t.integer  :user_id
+      t.datetime :gstart
+      t.datetime :gend
       t.datetime :time
 
       t.timestamps
