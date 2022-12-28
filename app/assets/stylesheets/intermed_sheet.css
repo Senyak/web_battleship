@@ -1,7 +1,7 @@
-.log_container {
+.sheet_container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
     grid-gap: 5px;
     justify-content: center;
     grid-template-areas:
@@ -10,43 +10,51 @@
         "f";
 }
 
-.form_txt{
-    font-size: 3.5vmax;
+.header_cont{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+    justify-content: center;
+    grid-template-areas:
+        "fir sec";
 }
-.form_marg{
+
+.head_fir{
+    grid-area: fir;
+
+}
+
+.head_sec{
+    grid-area: sec;
     margin: 5em;
 }
 
-.log_field{
-    width: 40vmax;
-    height: 3vmax;
-    font-size: 3vmax;
+.cont_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    justify-content: center;
+    grid-template-areas:
+        "artc artc"
+        "r l";
 }
 
-.form_background
-{
-    padding-top: 1vmax;
-    padding-bottom: 1vmax;
-    margin-left: 25vmax;
-    margin-right: 25vmax;
-    background-color: rgba(255,255,255,50%);
-    background-image:
-            linear-gradient(45deg, rgba(255,255,255,.0) 30%, rgba(255,255,255,.8), rgba(255,255,255,.0) 70%);
-    box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
+.article{
+    grid-area: artc;
 }
 
-.log_but{
-    width: 40vmax;
-    height: 4vmax;
-    font-size: 3vmax;
-    margin-bottom: 3vmax;
+.exit_button {
     position: relative;
     display: inline-block;
-    color:  black;
-    font-weight: bold;
+    color: #960303;
+    font-weight: normal;
+    font-size: 4vmin;
     text-decoration: none;
     text-shadow: rgba(255,255,255,25%) 1px 1px, rgba(100,100,100,10%) 3px 7px 3px;
     user-select: none;
+    padding: 1em 2em;
     outline: none;
     border-radius: 3px / 100%;
     background-color: rgba(255,255,255,50%);
@@ -57,8 +65,14 @@
     background-position: 300% 0, 0 0, 0 0, 0 200%, 0 4px, 0 calc(100% - 4px);
     box-shadow: rgba(0,0,0,.5) 3px 10px 10px -10px;
 }
-
-.log_but:active {
+exit_button:hover {
+    transition: .5s linear;
+    background-position: -200% 0, 0 0, 0 0, 0 100%, 0 4px, 0 calc(100% - 4px);
+}
+exit_button:active {
     top: 1px;
 }
 
+a.l_button{
+    font-weight: bolder;
+}

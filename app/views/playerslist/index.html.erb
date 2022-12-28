@@ -1,18 +1,41 @@
+<body class="sheet_container">
+
+
+<header class="header_cont">
+  <div class="head_fir">
+
+
+  </div>
+
+  <div class="head_sec">
+    <nav>
+      <%= link_to 'Покинуть борт', logout_path, class: "exit_button" %>
+    </nav>
+  </div>
+</header>
+
+<div class="content cont_container">
+  <div class="article">
 <%= render 'shared/errors' %>
-
+  <h1 class="title-large"> Добро пожаловать на борт, капитан <%= @current_user.username %>! </h1>
+<h1 class="title"> Готовы начать бой? </h1>
+  </div>
+  <div class="left">
 <nav>
-  <%= link_to 'Покинуть борт', logout_path %>
-
-</nav>
-
-<h1> Добро пожаловать на борт, капитан <%= @current_user.username %>! </h1>
-
-<h1> Готовы начать бой? </h1>
-<nav>
-  <%= link_to 'Один капитан', play_path %>
+  <%= link_to 'Один капитан', play_path, class: "button" %>
   <% flash[:error] = nil %>
 </nav>
+    </div>
+  <div class="right">
 <nav>
-  <%= link_to 'Два капитана', playerslist_path %>
+  <%= link_to 'Два капитана', playerslist_path, class: "button" %>
   <% flash[:error] = ['На данный момент функция недоступна']%>
 </nav>
+    </div>
+</div>
+
+<footer>
+
+</footer>
+
+</body>
