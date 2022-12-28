@@ -4,7 +4,6 @@ class CreateInformation < ActiveRecord::Migration[7.0]
       t.integer :wins
       t.integer :losses
       t.integer :user_id
-      t.integer :rating_id
 
       t.timestamps
     end

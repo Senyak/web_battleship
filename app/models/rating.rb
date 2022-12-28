@@ -1,5 +1,5 @@
 class Rating < ApplicationRecord
-  belongs_to :user, through: :information
+  has_one :user, through: :information
 
 
 
