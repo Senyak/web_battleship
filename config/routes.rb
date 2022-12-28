@@ -13,6 +13,7 @@ Rails.application.routes.draw do
   get '/logout', to: 'login#destroy'
 
   get '/playerslist', to: 'playerslist#index'
+  get '/play', to: 'play#start'
 
 
 
