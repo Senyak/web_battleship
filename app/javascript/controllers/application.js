@@ -34,6 +34,7 @@ class Field {
             }
             if(userCount == 20) {
                 alert('You WIN!!!!')
+                window.location.replace("/endgame")
             }
             this.backFire();
             userHint.innerText = userCount;

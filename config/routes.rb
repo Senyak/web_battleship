@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
   get '/playerslist', to: 'playerslist#index'
   get '/play', to: 'play#start'
+  get '/endgame', to: 'play#endgame'
 
 
 
