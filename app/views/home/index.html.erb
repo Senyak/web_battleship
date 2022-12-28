@@ -1,8 +1,25 @@
-<nav>
-  <%= link_to 'Вернуться к своей флотилии', login_path %>
-</nav>
-<nav>
-  <%= link_to 'Создать новую флотилию', register_path %>
-</nav>
+<body class ="container">
+<header class = "header">
+<div class ="head_div">
+  <h1 class = "title-large main-txt"> Приветствуем тебя, отважный капитан! </h1>
+</div>
 
-<h1> Приветствуем тебя, отважный капитан! </h1>
+</header>
+<div class ="content div_container">
+  <div class = "right">
+    <nav class="button_txt">
+      <%= link_to 'Вернуться к своей флотилии', login_path, class: "button" %>
+    </nav>
+  </div>
+  <div class="left">
+    <nav class="button_txt">
+      <%= link_to 'Создать новую флотилию', register_path, class: "button" %>
+    </nav>
+  </div>
+</div>
+
+<footer>
+
+</footer>
+
+</body>

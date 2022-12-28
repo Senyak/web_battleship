@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Gardens';
+    src: url('gardenscregular.ttf');
+    font-family: 'Airbone';
+    src: url('airborne.ttf');
+}
+
+body{
+    font-family: "Airbone";
+}
+
+.title-large{
+    font-size: 4vmax;
+}
+
+.main-txt{
+    color:white;
+    text-align: center;
+}
+
+.button_txt{
+    text-align: center;
+}
