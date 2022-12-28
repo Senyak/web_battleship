@@ -1,24 +1,35 @@
-# README
+# Morskoy_boy On Rails 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Мотивация:
 
-Things you may want to cover:
+Не нашли стильного морского боя (
 
-* Ruby version
+### User-story:
 
-* System dependencies
+Настоящие капитаны сойдутся в битве, чтобы показать, чья тактика и чей опыт сможет привести флот отважных моряков к победе.
+Пользователи могут регистрироваться, находить достойных противников из рейтинга и затевать сражения.
+Самые достойные капитаны, одержавшие наибольшее количество побед, появятся в рейтинге, чтобы поразить начинающих моряков своей отвагой
 
-* Configuration
+### Страницы приложения:
 
-* Database creation
+* Стартовая страница
+* Вход/Регистрация
+* Страница выбора противника
+* Поле сражения
 
-* Database initialization
+### Запуск приложения:
 
-* How to run the test suite
+Ссылочка на **[сайт](https://web-battleship-c9k4.onrender.com)**
 
-* Services (job queues, cache servers, search engines, etc.)
+### Вход и регистрация:
 
-* Deployment instructions
+Логин + пароль + почта
 
-* ...
+### База данных:
+СУБД: PostgreSQL
+
+### Разработчики:
+* Селина Мария 
+* Гайдина Полина 
+* Колесникова Екатерина 
+* Зиннатуллин Кирилл 
