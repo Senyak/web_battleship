@@ -20,13 +20,13 @@
   <h1 class="title-large"> Добро пожаловать на борт, капитан <%= @current_user.username %>! </h1>
 <h1 class="title"> Готовы начать бой? </h1>
   </div>
-  <div class="left">
+  <div class="left sheet_buttons">
 <nav>
   <%= link_to 'Один капитан', play_path, class: "button" %>
   <% flash[:error] = nil %>
 </nav>
     </div>
-  <div class="right">
+  <div class="right sheet_buttons">
 <nav>
   <%= link_to 'Два капитана', playerslist_path, class: "button" %>
   <% flash[:error] = ['На данный момент функция недоступна']%>

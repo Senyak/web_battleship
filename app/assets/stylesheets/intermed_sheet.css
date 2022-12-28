@@ -73,6 +73,8 @@ exit_button:active {
     top: 1px;
 }
 
-a.l_button{
-    font-weight: bolder;
+.sheet_buttons{
+    margin-top: 10em;
 }
+
+
